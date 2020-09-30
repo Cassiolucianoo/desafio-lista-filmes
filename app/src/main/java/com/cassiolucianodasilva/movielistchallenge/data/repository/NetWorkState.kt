@@ -5,27 +5,27 @@ package com.cassiolucianodasilva.movielistchallenge.data.repository
  * TODO
  *
  */
-enum class Status{
+enum class Status {
     RUNNING,
     SUCCESS,
     FAILED
 
 }
 
-class NetWorkState (val  status: Status, val msg : String){
+class NetworkState(val status: Status, val msg: String) {
 
-    companion object{
+    companion object {
 
-        val LOADED: NetWorkState
-        val LOADING: NetWorkState
-        val ERRO: NetWorkState
+        val LOADED: NetworkState
+        val LOADING: NetworkState
+        val ERROR: NetworkState
 
         init {
-            LOADED = NetWorkState(Status.SUCCESS, "SUCESSO")
-            LOADING = NetWorkState(Status.RUNNING, "CARREGANDO")
-            ERRO = NetWorkState(Status.FAILED, "Algo deu errado, verifique sua internet")
+            LOADED = NetworkState(Status.SUCCESS, "Success")
+
+            LOADING = NetworkState(Status.RUNNING, "Running")
+
+            ERROR = NetworkState(Status.FAILED, "Something went wrong")
         }
-
     }
-
 }
