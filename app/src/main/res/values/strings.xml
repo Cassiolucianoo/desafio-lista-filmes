@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Movie List Challenge</string>
+    <string name="erro_connection">Ocorreu um erro com a sua internet</string>
+    <string name="Overview">Visão geral .........</string>
+    <string name="OverView1">Visão geral</string>
+    <string name="profits">Rendimento:</string>
+    <string name="Expenses">Despesas:</string>
+    <string name="Runtime">Duração:</string>
+</resources>
