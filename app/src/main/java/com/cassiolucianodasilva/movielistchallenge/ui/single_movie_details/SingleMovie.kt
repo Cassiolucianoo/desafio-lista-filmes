@@ -55,7 +55,7 @@ class SingleMovie : AppCompatActivity() {
         movie_runtime.text = it.runtime.toString() + " minutes"
         movie_overview.text = it.overview
 
-        val formatCurrency = NumberFormat.getCurrencyInstance(Locale.US)
+        //val formatCurrency = NumberFormat.getCurrencyInstance(Locale.US)
         //movie_budget.text = formatCurrency.format(it.budget)
        // movie_revenue.text = formatCurrency.format(it.revenue)
 
