@@ -15,8 +15,6 @@ import com.cassiolucianodasilva.movielistchallenge.data.api.TheMovieDBInterface
 import com.cassiolucianodasilva.movielistchallenge.data.repository.NetworkState
 import com.cassiolucianodasilva.movielistchallenge.vo.MovieDetails
 import kotlinx.android.synthetic.main.activity_movie_details.*
-import java.text.NumberFormat
-import java.util.*
 
 class SingleMovie : AppCompatActivity() {
 

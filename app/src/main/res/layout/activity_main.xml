@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.MainActivity">
+    tools:context=".ui.popular_movie.MainActivity">
 
 
     <LinearLayout
@@ -23,7 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="Connection Problem!!"
+            android:text="Erro de rede, verifique sua internet !"
             android:visibility="gone"/>
 
         <androidx.recyclerview.widget.RecyclerView

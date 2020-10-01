@@ -22,13 +22,13 @@ class NetworkState(val status: Status, val msg: String) {
         val ENDOFLIST: NetworkState
 
         init {
-            LOADED = NetworkState(Status.SUCCESS, "Success")
+            LOADED = NetworkState(Status.SUCCESS, "Sucesso!")
 
-            LOADING = NetworkState(Status.RUNNING, "Running")
+            LOADING = NetworkState(Status.RUNNING, "Carregando...")
 
-            ERROR = NetworkState(Status.FAILED, "Something went wrong")
+            ERROR = NetworkState(Status.FAILED, "Que triste ! Algo deu errado")
 
-            ENDOFLIST = NetworkState(Status.FAILED, "You have reached the end")
+            ENDOFLIST = NetworkState(Status.FAILED, "Chegou ao fim")
         }
     }
 }
