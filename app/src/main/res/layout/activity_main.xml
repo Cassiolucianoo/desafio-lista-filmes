@@ -7,16 +7,19 @@
     tools:context=".ui.popular_movie.MainActivity">
 
 
+
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
         <ProgressBar
             android:id="@+id/progress_bar_popular"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:visibility="gone"/>
+            android:visibility="gone" />
 
         <TextView
             android:id="@+id/txt_error_popular"
@@ -24,15 +27,38 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="Erro de rede, verifique sua internet !"
-            android:visibility="gone"/>
+            android:visibility="gone" />
+
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/white"
+                 android:text="Lista Filmes"
+                android:textSize="20sp"
+                />
+
+
+
+        </Toolbar>
+
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:textAlignment="center" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_movie_list"
-            android:layout_margin="4dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scrollbars="vertical"
-            />
+            android:layout_height="663dp"
+            android:layout_margin="4dp"
+            android:scrollbars="vertical" />
 
 
     </LinearLayout>

@@ -22,7 +22,7 @@ class PopularMoviePagedListAdapter(public val context: Context) : PagedListAdapt
 
     val MOVIE_VIEW_TYPE = 1
     val NETWORK_VIEW_TYPE = 2
-
+çççççç
     private var networkState: NetworkState? = null
 
 

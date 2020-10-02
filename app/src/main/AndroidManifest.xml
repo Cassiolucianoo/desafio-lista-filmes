@@ -13,8 +13,20 @@
         android:theme="@style/AppTheme" tools:ignore="GoogleAppIndexingWarning">
         <activity android:name="com.cassiolucianodasilva.movielistchallenge.ui.single_movie_details.SingleMovie">
         </activity>
-        <activity android:name=".ui.popular_movie.MainActivity">
+        <activity android:name=".ui.popular_movie.MainActivity" android:theme="@style/AppTheme.NoActionBat">
+            <meta-data android:name="android.app.searchable"
+                android:resource="@xml/searchable"/>
+
             <intent-filter>
+
+                <action android:name="android.intent.action.SEARCH"/>
+
+            </intent-filter>
+
+            <intent-filter>
+
+
+
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
